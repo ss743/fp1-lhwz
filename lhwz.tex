@@ -83,6 +83,12 @@
 
 \section*{Abstract}
 
+Our values for the half-lifes are:
+\begin{align*}
+T_{\frac12,\text{Sm}}&=\left(1.93\pm0.04\right)\cdot10^{11}\,\text{years}\\
+T_{\frac12,\text{Ka}}&=\left(1.3 \pm0.8 \right)\cdot10^{9} \,\text{years}
+\end{align*}
+
 \newpage
 
 \thispagestyle{empty}
@@ -92,8 +98,7 @@
 %Schreiben----------------------------------------------------------------------------------------------------------
 \pagenumbering{arabic} %verstecke Seitenzahl
 \section{Introduction}
-In order to determine the half life of a radioactive elements, usually the number of decays per second (decay rate) is measured and the change over time of the decay rate observed. The half-life can then be determined from this characteristic exponential behaviour. However, this method isn't useful to determine the half-life of samples with a very long half-life, e.g. ${}^{238}$Uranium with a half-life of $T_{1/2}$=4,468$\cdot 10^9$years,  as hardly any change will be observed. Instead the activity of the sample is measured, that presents the quantity describing the derivative of the law of decay given by the following relation: A=$\dot{N}$=ln2N/$T_{1/2}$ where N is the known number of radioactive nuclides.
-
+In order to determine the half life of a radioactive elements, usually the number of decays per second (decay rate) is measured and the change over time of the decay rate observed. The half-life can then be determined from this characteristic exponential behaviour. However, this method isn't useful to determine the half-life of samples with a very long half-life, e.g. ${}^{238}$Uranium with a half-life of $T_{1/2}$=4,468$\cdot 10^9$ years, as hardly any change will be observed. Instead the activity of the sample is measured, that presents the quantity describing the derivative of the law of decay given by the following relation: A=$\dot{N}$=ln2N/$T_{1/2}$ where N is the known number of radioactive nuclides.
 
 In this experiment this method is used to determine the half-life of the $\alpha$-emitter ${}^{147}$Samarium and the $\beta$-emitter ${}^{40}$Kalium both having very long half-lives. Additionally two different correction procedures are applied to consider back-scattering and self-absorption effects. 
 In the case of Samarium, we take advantage of the constant range of the  $\alpha$-radiation and the known surface area while we make use of the mass dependency for Kalium.
@@ -115,7 +120,7 @@ In the case of Samarium, we take advantage of the constant range of the  $\alpha
 \subsection{Law of decay}\label{zerfallsgesetz}
 
 Radioactive Decay is a stochastic process which implies that the exact point of time at which a single atom decays can not be predicted, but only a probability that it will decay for any given point in time.  
-The decay rate $frac{dN}{dt}$ for a certain number of Atoms $N$ is given by the following formula:
+The decay rate $\frac{dN}{dt}$ for a certain number of Atoms $N$ is given by the following formula:
 \begin{align}
 \frac{dN}{dt}=-\lambda N \label{1}
 \end{align}
@@ -135,7 +140,7 @@ which again is directly related to the half-live $T_{1/2}$ given by:
 \begin{align}
 T_{1/2} = \ln2\cdot \tau = \frac{\ln2}{\lambda}
 \end{align}
-Another characteristic quantity for radioactive decays is the Activity $A$ which describes the Number of Decays per second measured in Becquerel ( $Bq=1/s$):
+Another characteristic quantity for radioactive decays is the Activity $A$ which describes the Number of Decays per second measured in Becquerel (Bq$=1/$s):
 \begin{align}
 A = \lambda N = \frac{N}{\tau} = \frac{N\ln2}{T_{1/2}}\label{activity}
 \end{align}
@@ -206,22 +211,19 @@ Light particles can also lose energy by deviation in the Coulomb-field of Nuclei
 \begin{align}
 [\left. \left.\left.\left. -\frac{dE}{dx}\right| _{total}=-\frac{dE}{dx}\right| _{Ionisation}-\frac{dE}{dx}\right|  _{Brems}-\frac{dE}{dx}\right| _{Cherenkov}
 \end{align}
-For low temperatures the energy loss by ionisation overweights. The energy loss by decelaration radiation increases proportionally with the energy of the incident particles. A small fraction of the total energy loss is made up by the Cherenkov-radiation which implies charged particles moving faster than light in the given medium. The range, i.e. the distance needed for a particle to come to rest in a given medium, is then given by:
+For low temperatures the energy loss by ionisation overweights. The energy loss by deceleration radiation increases proportionally with the energy of the incident particles. A small fraction of the total energy loss is made up by the Cherenkov-radiation which implies charged particles moving faster than light in the given medium. The range, i.e. the distance needed for a particle to come to rest in a given medium, is then given by:
 \begin{align}
 R=\int_{E}^{0}-\frac{dE}{dE/dx}
 \end{align}
 The typical range of $\alpha$-radiation in air is a few centimetres, in matter it is a few micrometers and therefore can very easily be shielded e.g. with a piece of paper.
 The range of $beta$-radiation is much bigger, that is to say a few meters in air and a few millimetres in matter.
 
- \subsection{Counter Tube/Detector}
+ \subsection{Counter Tube}
  
- The detector used in this experiment is a "Methan-Durchflusszähler". A 
-% Bei dem im Versuch verwendeten Detektor handelt es sich um ein Methan-Durchflusszähler. In einem Zylinder der als Kathode dient ist ein Zähldraht (Molybdän) angebracht, welcher die Anode darstellt. Durch Anlegen einer Hochspannung wird ein elektrisches Feld zwischen Zähldraht und Zylinder-Mantel erzeugt. Werden durch Strahlung Moleküle des Zählgases (Methan) ionisiert, so wandern die Elektronen zur Anode und die positiven Ionen zur Kathode. Der dadurch erzeugte Strom wird mit einem Wechselkopplungskondensator und einem Vorverstärker in ein Spannungssignal umgewandelt. Da sich das Methan aufgrund der Ionisation nach und nach zersetzt, muss es ständig ausgetauscht werden, damit konstante Zähleigenschaften gewährleistet sind.\\
-% Da die untersuchte Strahlung nur eine geringe Reichweite hat, wird die Probe direkt in das Zählrohr eingebracht und strahlt dort im Raumwinkel 2$\pi$ in das Zählrohr ab.
+ The counter tube used in this experiment is a "Methan-Durchflusszähler". Inside a cylinder used as a cathode there is a counting wire out of molybdenum as anode. The cylinder is filled with methane. By applying a high voltage an electric field is induced between the counting wire and the cylinder jacket. When the radiation ionizes molecules the electrons move to the anode and the positive ions move to the cathode. The hereby generated current is transformed into a voltage signal by an exchange feedback capacitor and a pre-amplifier.
+ Since the methane is getting ionized it constantly needs to be changed to ensure constant counting properties.\\
  
-
- 
-% Das Zählrohr wird als Proportionalzählrohr betrieben. Im Gegensatz zur Ionisationskammer, bei der lediglich die primär erzeugten Ladungen eingesammelt werden, findet hier eine Verstärkung durch das Zählgas statt. Diese Gasverstärkung ist proportional zur angelegten Spannung. Sie kann außerdem durch Verkleinern des Zähldrahtes (Verdichtung der Feldlinien in der Nähe des Drahtes) erhöht werde. In einem solchen Zählrohr werden die von der Strahlung erzeugten Elektronen so stark beschleunigt, dass sie genug Energie erhalten um weitere Moleküle zu ionisieren. Die Anzahl Ladungsträger die zum Strom beitragen erhöht sich also stark.
+ The samples are directly put into the counter tube because the radiation has a very small range. It decays in a solid angle $\Omega=2\pi$ into the counter tube. The counter tube is used as a proportional counter tube. Contrary to the ionization chamber which only collects the primary created charges, the charges are amplified by the methane. This amplification is proportional to the applied voltage.
  
 
  \subsection{Corrections for the Calculations of the Half Time}
@@ -526,12 +528,44 @@ Additionally another reason for the large error on the half-life of Kalium is th
 
 \subsection{Sourcecode}
 
-\ 
+\subsubsection{\code{auswertung.R}}\label{auswertung.R}
+\lstinputlisting[language=R]{r-files/auswertung.R}
+\subsubsection{\code{samarium.R}}\label{samarium.R}
+\lstinputlisting[language=R]{r-files/samarium.R}
+\subsubsection{\code{kalium.R}}\label{kalium.R}
+\lstinputlisting[language=R]{r-files/kalium.R}
+\subsubsection{\code{round.R}}\label{round.R}
+\lstinputlisting[language=R]{r-files/round.R}
 
-%\subsubsection{$\alpha$-Plateau Samarium}
-%\lstinputlisting{data/Americium_1.TKA}
-
-
+\subsection{Rohdaten}
+\subsubsection{Uranium Characteristics}
+\lstinputlisting{data/uran2.txt}
+\subsubsection{Background Characteristics}
+\lstinputlisting{data/Kalium1.txt}
+\subsubsection{Samarium Characteristics}
+\lstinputlisting{data/Samarium1.txt}
+\subsubsection{Kalium Characteristics}
+\lstinputlisting{data/Kalium1.txt}
+\subsubsection{Samarium Measurement}
+\lstinputlisting{data/Samarium2.txt}
+\subsubsection{Kalium Measurement 1}
+\lstinputlisting{data/Kalium2.txt}
+\subsubsection{Kalium Measurement 2}
+\lstinputlisting{data/Kalium3.txt}
+\subsubsection{Kalium Measurement 3}
+\lstinputlisting{data/Kalium4.txt}
+\subsubsection{Kalium Measurement 4}
+\lstinputlisting{data/Kalium5.txt}
+\subsubsection{Kalium Measurement 5}
+\lstinputlisting{data/Kalium6.txt}
+\subsubsection{Kalium Measurement 6}
+\lstinputlisting{data/Kalium7.txt}
+\subsubsection{Kalium Measurement 7}
+\lstinputlisting{data/Kalium8.txt}
+\subsubsection{Kalium Measurement 8}
+\lstinputlisting{data/Kalium9.txt}
+\subsubsection{Kalium Measurement 9}
+\lstinputlisting{data/Kalium10.txt}
 %\newpage
 %\subsection{Quellcode (MATLAB)}
 %\lstinputlisting[language=MATLAB]{Rohdaten/alpha.m}
