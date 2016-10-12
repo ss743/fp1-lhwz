@@ -236,7 +236,7 @@ The range of $beta$-radiation is much bigger, that is to say a few meters in air
 The first effect described here is mainly observed with $\alpha$-radiation while the second effect mainly contributes to $\beta$-radiation. \textsuperscript{\cite{staat}}
 
 
-\subsubsection{Correction for $\alpha$-radiation}
+\subsubsection{Correction for $\alpha$-radiation}\label{alphacorrection}
 
 As $\alpha$-particles have a very limited range in matter, the effect of self-absorption cab not be neglected. Only particles whose distance traveled to leave the sample r is shorter than the range R in the sample. 
 
@@ -248,7 +248,7 @@ As $\alpha$-particles have a very limited range in matter, the effect of self-ab
 	\captionof{figure}{For a maximum range R of $\alpha$-particles in the sample there exists a maximum angle $\theta_{max}$ at which particles can still leave the sample. \textsuperscript{\cite{staat}}}
 \end{minipage}
 \vskip0.5cm
-Given that $\theta_{max}=arccos\left( \frac{x}{R}\right)$   is the maximum angle allowing $\alpha$-particles to leave the sample, we obtain for the 
+Given that $\theta_{max}=\arccos\left( \frac{x}{R}\right)$   is the maximum angle allowing $\alpha$-particles to leave the sample, we obtain for the 
 solid angle $\Omega$ in which radiation is emitted:
 
 \begin{align}
@@ -380,21 +380,21 @@ The ratio for the two decays is $\frac{EC}{\beta-}=0.12$.\\
 
 \subsection{Experimental Procedure}
 
-\subsubsection{Counter Tube with ${}^{238}$Uran}
+\subsubsection{Counter Tube with ${}^{238}$Uran}\label{durchfuehrunguran}
 \begin{itemize}
 	\item First of all the variable settings of the electronic have to be chosen in a way so that a useful signal is generated. In order to achieve such a signal, the signal is observed with an oscilloscope after passing through the preamplifier, the main amplifier and the single channel analyzer (SCA) separately. To optimise the seperation of our signal and noise the lower level of the SCA has to be high enough to eliminate pules caused by noise and at the same time low enough to still register small signal pulses. The chosen settings need to be kept constant during the entire experiment.
 	
 		\textbf{shaping amplifier}: coarse gain: 200 \hspace{1.5cm} gain: 1.5 \hspace{1cm} shaping time: 6$\mu$s\\
 		\textbf{timing SCA}: \hspace{1cm} lower level: 3.6 \hspace{0.5cm} upper level: 10 \hspace{2.5cm} delay: 1.4
 	
-	\item The characteristic of the counter tube is recorded with ${}^{238}$Uran. The settings chosen for the mesurement program are the following: initial voltage $U_{anf}$=1000V, final voltage $U_{end}$=4000V, voltage intervalls $U_{step}$=100V and counting time per measurement/voltage t=50s
+	\item The characteristic of the counter tube is recorded with ${}^{238}$Uran (see chapter \ref{uranium}). The settings chosen for the mesurement program are the following: initial voltage $U_{anf}$=1000V, final voltage $U_{end}$=4000V, voltage intervalls $U_{step}$=100V and counting time per measurement/voltage t=50s
 	
 	\item We then measure the background by measuring with an empty Aluminium dish with the same settings as before except the couting time per voltage being t=100s
 \end{itemize}
 
 
 
-\subsubsection{Measurement of the half-life of ${}^{147}$Samarium}
+\subsubsection{Measurement of the half-life of ${}^{147}$Samarium}\label{durchfuehrungsamarium}
 
 \begin{itemize}
 	
@@ -429,46 +429,50 @@ The ratio for the two decays is $\frac{EC}{\beta-}=0.12$.\\
 \subsection{Counter Tube Characteristics}
 
 \subsubsection{Uranium}
-As discussed in chapter \ref{uranium} we use $^{238}$Uranium to get the characteristics of the counter tube.
+As discussed in chapter \ref{durchfuehrunguran} we use $^{238}$Uranium to get the characteristics of the counter tube.
+
 \gra{zaehlrohr-uran}{Counter tube characteristics of $^{238}$U\label{curan}}
 In figure \ref{curan} we see two plateaus. The first plateau comes from the $\alpha$-decay of $^{238}$U and the second plateau shows the $\beta$-decay of $^{234}$Th and $^{234}$Pd. The plateaus are between $U=1900\,\mathrm{V}$ and $U=2600\,\mathrm{V}$ for $\alpha$ and between $U=3200\,\mathrm{V}$ and $U=4000\,\mathrm{V}$ for $\beta$.
 The error on the counting rate is here and in the following chapters given by the Poisson error on the counts: $$s_n=n\frac{s_N}{N}=\frac Nt\frac1{\sqrt N}=\frac{\sqrt{N}}{t}=\sqrt{\frac nt}$$
-
+\newpage
 \subsubsection{Background}\label{untergrund}
-We measured the background radiation by putting an empty aluminium dish inside the counter tube.
+We measured the background radiation by putting an empty aluminium dish inside the counter tube (see chapter \ref{durchfuehrunguran}).
+
 \gra{zaehlrohr-untergrund}{Counter tube characteristics of the background radiation\label{background}}
 In figure \ref{background} we see that the background is very small. The background counting rates are about 3 orders of magnitude smaller than the counting rates of the uranium sample. So we would not be able to see any change in the position of the plateaus if we substracted the background from the counter tube characteristics of the uranium sample.\\
 
 Additionally the time for measuring the background is very short, so we don't get significant background counting rates. We see in figure \ref{background} that the counting rates scatter a lot and won't better our values.
 \newpage
 \subsubsection{Samarium}
-Now we tried to get the working point for the Samarium measurements. Therefor we measured the counter tube characteristics of Samarium in a span starting at the beginning of the $\alpha$-plateau of uranium and ending on the beginning of the $\beta$-plateau of uranium.
+Now we tried to get the working point for the Samarium measurements (see chapter \ref{durchfuehrungsamarium}). Therefore we measured the counter tube characteristics of Samarium in a span starting at the beginning of the $\alpha$-plateau of uranium and ending on the beginning of the $\beta$-plateau of uranium.
 
 \gra{zaehlrohr-samarium}{Counter tube characteristics of $^{147}$Sm \textcolor{blue}{(corrected with the background)}\label{csamarium}}
 
 In figure \ref{csamarium} we plotted the counter tube characteristics of $^{147}$Sm once original and once corrected by the background seen in figure \ref{background}. Since the corrected data scatters a lot and has very big error bars (as discussed in chapter \ref{untergrund}) we can't really use the corrected data to set our working point. So we assumed an almost linear behavior in the range of $U=2300\,\mathrm{V}$ and $U=2900\,\mathrm{V}$. Considering the $\alpha$-plateau from figure \ref{curan} we set the working point for Samarium to $U=2500\,\mathrm{V}$
 \newpage
 \subsubsection{Kalium}
-We also measured the counter tube characteristics of Kalium to determine the working point for the Kalium measurements. We started at the beginning of the $\beta$-plateau and stopped at $U=4000\,\mathrm{V}$.
+We also measured the counter tube characteristics of Kalium to determine the working point for the Kalium measurements (see chapter \ref{kaliumdurchfuehrung}). We started at the beginning of the $\beta$-plateau and stopped at $U=4000\,\mathrm{V}$.
+
 \gra{zaehlrohr-kalium}{Counter tube characteristics of $^{40}$K \textcolor{blue}{(corrected with the background)}\label{ckalium}}
 
 In figure \ref{ckalium} we see that the counting rate seems to be constant between $U=3300\,\mathrm{V}$ and $U=4000\,\mathrm{V}$ with one outlier at $U=3800\,\mathrm{V}$. The correction does not essentially change this behavior, so we choose our working point at $U=3500\,\mathrm{V}$.
 \newpage
 \subsection{Half-life of Samarium}
-With formula (\ref{halflifeSm}) we can now calculate the half-life of Samarium out of the measured counting rate. We use the following constants
+With formula (\ref{halflifeSm}) we can now calculate the half-life of Samarium out of the measured counting rate (see chapter \ref{alphacorrection}). We use the following constants
 \begin{align*}
 	N_{\text{A}}&=6.022\cdot10^{23}\\
 	h_{\text{rel}}&=0.1487\,^{\cite{anleitung}}\\
-	R\rho&=0.04025&\text{(calculated out of the known values for air)}\\
+	R\rho&=0.04025\\
 	m_{\text{mol}}&=0.34872
 \end{align*}
+(where $R\rho$ is calculated with the known values for air)
 and the following measurement data:
 \begin{align*}
 	d&=(2.877\pm0.002)\cdot10^{-2}\mathrm{m}\\
 	n&=(0.416\pm0.009)\,\mathrm{s^{-1}}
 \end{align*}
 The error on $d$ is given by gaussian error propagation out of the error for the single measurements $d_i$: $s_d=\frac1{\sqrt{n}}s_{d_i}$.\\
-We get the following result: 
+We get the following result (see chapter \ref{alphacorrection}): 
 \begin{align*}
 	T_{\frac12,\text{Sm}}&=\ln2\cdot\frac{N_{\text{A}}h_{\text{rel}}R\rho\pi d^2}{m_{\text{mol}}8n}\\&=1.93\cdot 10^{11}\text{ years}
 \end{align*}
@@ -483,7 +487,7 @@ So our result for the half-life of Samarium is:
 \end{align*}
 \newpage
 \subsection{Half-life of Kalium}
-As described in chapter \ref{kaliumdurchfuehrung} we measured the counting rate of Kalium for different masses. The counting rate relates to the mass as following: 
+As described in chapter \ref{kaliumdurchfuehrung} we measured the counting rate of Kalium for different masses. The counting rate relates to the mass as following (see chapter \ref{betacorrection}): 
 \begin{align}
 	n=a(1-e^{-bm})\label{fitfunction}
 \end{align}
@@ -513,7 +517,7 @@ We have the following constants:
 	m_{\text{mol}}&=0.07455
 \end{align*}
 
-So we can calculate the half-life with formula (\ref{halftimeKa}):
+So we can calculate the half-life with formula (\ref{halftimeKa}) (see chapter \ref{betacorrection}):
 \begin{align*}
 	T_{\frac12,\text{Ka}}&=\frac{\ln2N_Ah_{rel}f_B}{2\cdot1.12abm_{mol}}\\
 	&=1.3\cdot10^{9}\,\text{years}
