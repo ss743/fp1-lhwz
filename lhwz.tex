@@ -101,7 +101,7 @@ T_{\frac12,\text{Ka}}&=\left(1.3 \pm0.8 \right)\cdot10^{9} \,\text{years}
 %Schreiben----------------------------------------------------------------------------------------------------------
 \pagenumbering{arabic} %verstecke Seitenzahl
 \section{Introduction}
-In order to determine the half life of a radioactive elements, usually the number of decays per second (decay rate) is measured and the change over time of the decay rate observed. The half-life can then be determined from this characteristic exponential behaviour. However, this method isn't useful to determine the half-life of samples with a very long half-life, e.g. ${}^{238}$Uranium with a half-life of $T_{1/2}$=4,468$\cdot 10^9$ years, as hardly any change will be observed. Instead the activity of the sample is measured with a counter tube, that presents the quantity describing the derivative of the law of decay given by the following relation: A=$\dot{N}$=ln2N/$T_{1/2}$ where N is the known number of radioactive nuclides.
+In order to determine the half life of a radioactive elements, usually the number of decays per second (decay rate) is measured and the change over time of the decay rate observed. The half-life can then be determined from this characteristic exponential behaviour. However, this method isn't useful to determine the half-life of samples with a very long half-life, e.g. ${}^{238}$Uranium with a half-life of $T_{\frac12}$=4,468$\cdot 10^9$ years, as hardly any change will be observed. Instead the activity of the sample is measured with a counter tube, that presents the quantity describing the derivative of the law of decay given by the following relation: A=$\dot{N}$=ln2N/$T_{\frac12}$ where N is the known number of radioactive nuclides.
 
 In this experiment this method is used to determine the half-life of the $\alpha$-emitter ${}^{147}$Samarium and the $\beta$-emitter ${}^{40}$Kalium both having very long half-lives. Additionally two different correction procedures are applied to consider back-scattering and self-absorption effects. 
 In the case of Samarium, we take advantage of the constant range of the  $\alpha$-radiation and the known surface area while we make use of the mass dependency for Kalium.
@@ -123,33 +123,33 @@ In the case of Samarium, we take advantage of the constant range of the  $\alpha
 \subsection{Law of decay}\label{zerfallsgesetz}
 
 Radioactive Decay is a stochastic process which implies that the exact point of time at which a single atom decays can not be predicted, but only a probability that it will decay for any given point in time.  
-The decay rate $\frac{dN}{dt}$ for a certain number of Atoms $N$ is given by the following formula:\textsuperscript{\cite{dem}}
+The decay rate $\frac{dN}{dt}$ for a certain number of atoms $N$ is given by the following formula:\textsuperscript{\cite{dem}}
 \begin{align}
 \frac{dN}{dt}=-\lambda N \label{1}
 \end{align}
 
-where $\lambda$ is the decay constant, which describes the fraction of existing Atoms at a given starting point that decay per time unit.
-If an Atom is known to decay in different ways or processes the single decay rates of those add up to a total decay rate for that Atom.
-By solving the differential equation \ref{1}, we obtain the Number of atoms as function of time $t$.
+where $\lambda$ is the decay constant, which describes the fraction of existing atoms at a given starting point that decay per time unit.
+If an atom is known to decay in different ways or processes the single decay rates of those add up to a total decay rate for that atom.
+By solving the differential equation (\ref{1}), we obtain the number of atoms as function of time $t$.
 \begin{align}
 N(t)=N_0e^{-\lambda t}
 \end{align}
-where $N_0=N(t=0)$ is the Number of Atoms to start off with.
-The mean life-time of an Atom describing the average length of time that an element remains in the set, is directly dependent on the exponential decay constant and defined the following way:\textsuperscript{\cite{dem}}
+where $N_0=N(t=0)$ is the number of atoms to start off with.
+The mean life-time of an atom describing the average length of time that an element remains in the set, is directly dependent on the exponential decay constant and defined the following way:\textsuperscript{\cite{dem}}
 \begin{align}
 \tau=\frac{1}{\lambda}
 \end{align}
-which again is directly related to the half-live $T_{1/2}$ given by:
+which again is directly related to the half-live $T_{\frac12}$ given by:
 \begin{align}
-T_{1/2} = \ln2\cdot \tau = \frac{\ln2}{\lambda}
+T_{\frac12} = \ln2\cdot \tau = \frac{\ln2}{\lambda}
 \end{align}
-Another characteristic quantity for radioactive decays is the Activity $A$ which describes the Number of Decays per second measured in Becquerel (Bq$=1/$s):
+Another characteristic quantity for radioactive decays is the activity $A$ which describes the number of decays per second measured in Becquerel (Bq$=1/$s):
 \begin{align}
-A = \lambda N = \frac{N}{\tau} = \frac{N\ln2}{T_{1/2}}\label{activity}
+A = \lambda N = \frac{N}{\tau} = \frac{N\ln2}{T_{\frac12}}\label{activity}
 \end{align}
 
 \subsection{Radioactive Decay}
-Nuclei of unstable Atoms (so-called parent radionuclide) transform into another Nucleus (daughter nuclide) under transmission of ionized radiation, depending on the kind of decay taking place. The most important and relevant types of decay for this experiment are presented in the following sections:
+Nuclei of unstable atoms (so-called parent radionuclide) transform into another nucleus (daughter nuclide) under transmission of ionized radiation, depending on the kind of decay taking place. The most important and relevant types of decay for this experiment are presented in the following sections:
 
 \subsubsection{$\alpha$-decay \label{alpha}}
 
@@ -183,7 +183,7 @@ p &\rightarrow n + e^+ + \nu_e\\
 
 While the mass number is constant as for the $\beta^-$-decay, the charge number is reduced by one with this process.
 
-\subsubsection{Electron  Capture}
+\subsubsection{Electron  Capture}\label{ec}
 Electron Capture is a process in which a proton-rich, usually heavy nucleus 
 absorbs an electron from one of the most inner shells, i.e. K-shell or L-shell and thereby transforming a proton to a neutron while emitting an electron-neutrino making this process effectively very similar to the $\beta^+$-decay. \textsuperscript{\cite{dem}}
 This kind of decay isn't detected in this experiment.
@@ -214,7 +214,7 @@ Light particles can also lose energy by deviation in the Coulomb-field of Nuclei
 \begin{align}
 [\left. \left.\left.\left. -\frac{dE}{dx}\right| _{total}=-\frac{dE}{dx}\right| _{Ionisation}-\frac{dE}{dx}\right|  _{Brems}-\frac{dE}{dx}\right| _{Cherenkov}
 \end{align}
-For low temperatures the energy loss by ionisation overweights. The energy loss by deceleration radiation increases proportionally with the energy of the incident particles. A small fraction of the total energy loss is made up by the Cherenkov-radiation which implies charged particles moving faster than light in the given medium. The range, i.e. the distance needed for a particle to come to rest in a given medium, is then given by:
+For low temperatures the energy loss by ionization overweights. The energy loss by deceleration radiation increases proportionally with the energy of the incident particles. A small fraction of the total energy loss is made up by the Cherenkov-radiation which implies charged particles moving faster than light in the given medium. The range, i.e. the distance needed for a particle to come to rest in a given medium, is then given by:
 \begin{align}
 R=\int_{E}^{0}-\frac{dE}{dE/dx}
 \end{align}
@@ -274,7 +274,7 @@ With formula (\ref{activity}) we get for the samarium sample:
 	=\ln2\cdot\frac{N_{\text{A}}h_{\text{rel}}R\rho F}{m_{\text{mol}}2n}\\&
 	 =\ln2\cdot\frac{N_{\text{A}}h_{\text{rel}}R\rho\pi d^2}{m_{\text{mol}}8n}\label{halflifeSm}
 \end{align}
-with the Avogadro constant $N_A$, the natural abundance $h_{rel}$ of $^{147}$Sm and the diameter $d$ of the sample.
+with the Avogadro constant $N_A$, the natural abundance $h_{rel}$ of $^{147}$Sm and the diameter $d$ of the sample (see section \ref{auswertungSamarium}).
 
 \subsubsection{Correction for $\beta$-radiation}\label{betacorrection}
 
@@ -302,7 +302,7 @@ In order to take the back-scattering in the aluminium dish into account, we cons
 \left. \frac{dn}{dm}\right| _{m=0}=A_s f_B \frac{\Omega}{4\pi}
 \end{align}
 
-where $\omega$ is the solid angle (in this experiment $2\pi$, see chapter \ref{Interaction})  and $f_B$=1.29 the back-scattering factor of Aluminium.\\
+where $\omega$ is the solid angle (in this experiment $2\pi$, see chapter \ref{Interaction})  and $f_B$=1.29 the back-scattering factor of aluminium.\\
 
 This leads to:
 \begin{align}
@@ -329,9 +329,9 @@ As the total exponential decay rate is given by(see chapter \ref{zerfallsgesetz}
 \lambda_{ges} = \lambda_{\beta-} + \lambda_{EC} = \lambda_{\beta-}+0.12\lambda_{\beta-} = 1.12\lambda_{\beta-}
 \end{align}
 
-the actual half-life will be given by:
+the actual half-life will be given by (see section \ref{auswertungSamarium}):
 \begin{align}
-	T_{1/2} &= \frac{T_{1/2,\beta^-}}{1.12}\\
+	T_{\frac12} &= \frac{T_{\frac12,\beta^-}}{1.12}\\
 	&=\frac{\ln2N_Ah_{rel}f_B}{2\cdot1.12abm_{mol}}\label{halftimeKa}
 \end{align}
 
@@ -344,19 +344,19 @@ the actual half-life will be given by:
  
 \newpage
 \section{Experimental Set-Up and Procedure }
-In this experiment we use a "Methan-Durchflußzählrohr" as described in chapter \ref{CT} to detect the $\gamma$-rays from the samples.
-The pulses detected by the counter tube are proportional to the primary ionisation. They are then converted into voltage signals by a preamplifier (Amplifier 142PC, Firma Ortec) that are again proportional to the primary ionisation. This signal is then converted into a square wave signal with an Amplifier (Amplifier 571, Ortec) using differentiation and integration with a specific time constant (shaping time) $\mu$. This signal is then transferred to a single channel analyzer (TSCA 551, Ortec) with a setting for lower and upper level that determines in which energy range an event is registered. The counter (BNC 2120, National Instrument) is connected with  the program LabView on the computer which allows to vary all essential settings i.e. Voltage, counting time and intervalls.\textsuperscript{\cite{anleitung}}
+In this experiment we use a "Methan-Durchflusszählrohr" as described in chapter \ref{CT} to detect the $\gamma$-rays from the samples.
+The pulses detected by the counter tube are proportional to the primary ionization. They are then converted into voltage signals by a preamplifier (Amplifier 142PC, Firma Ortec) that are again proportional to the primary ionization. This signal is then converted into a square wave signal with an Amplifier (Amplifier 571, Ortec) using differentiation and integration with a specific time constant (shaping time) $\mu$. This signal is then transferred to a single channel analyzer (TSCA 551, Ortec) with a setting for lower and upper level that determines in which energy range an event is registered. The counter (BNC 2120, National Instrument) is connected with  the program LabView on the computer which allows to vary all essential settings i.e. Voltage, counting time and intervals.\textsuperscript{\cite{anleitung}}
 \vskip 20 pt
 \gra[0.8]{Versuchsaufbau}{Experimental Set-Up \textsuperscript{\cite{staat}}}
 \subsection{Used samples}
 
 \subsubsection{Characteristic of the Counter tube}\label{uranium}
 To record the characteristic of the Counter Tube (see chapter \ref{durchfuehrunguran}) ${}^{238}$Uranium is used. It makes up 99.275\% of the natural Uranium.
-With a half-life of $T_{1/2}({}^{238}U)=4.468\cdot 10^9$a it transforms via  $\alpha$-decay to ${}^{234}$Thorium. The energy of the $\alpha$-particle is about 4MeV in this process. According to \ref{alpha} this process is described as:
+With a half-life of $T_{\frac12}({}^{238}U)=4.468\cdot 10^9$a it transforms via  $\alpha$-decay to ${}^{234}$Thorium. The energy of the $\alpha$-particle is about 4MeV in this process. According to \ref{alpha} this process is described as:
 
 \[{}^{238}_{92}U \rightarrow {}^{234}_{90}Th + {}^4_2He\]
 
-Thorium then decays via $\beta$-decay  to ${}^{234}$Palladium with a half-time of  $T_{1/2}({}^{234}Th)$=24,1d, which again decays via  $\beta$-Zerfall into ${}^{234}$Uranium. According to chapter \ref{beta} this processes are written as follows:
+Thorium then decays via $\beta$-decay  to ${}^{234}$Palladium with a half-time of  $T_{\frac12}({}^{234}Th)$=24,1d, which again decays via  $\beta$-decay into ${}^{234}$Uranium. According to chapter \ref{beta} this processes are written as follows:
 
 \[{}^{234}_{90}Th \rightarrow {}^{234}_{91}Pd + e^- + \bar{\nu_e}\]
 
@@ -367,13 +367,13 @@ The energy of these decays is given by 80keV-200keV for the Thorium decay and up
 
 \subsubsection{$\alpha$-radiator}
 
-In this experiment ${}^{147}$Samarium that makes up 15\% of the natural Samarium is used as $\alpha$-radiator. The used sample consists of $Sm_2O_3$ and has a purity of 99\%. Samarium has a half-life of  $T_{1/2}({}^{147}Sm)=1.06\cdot10^{11}$a. It decays into ${}^{143}$Neodym (stable) transmitting an $\alpha$-particle with an energy of about 2MeV which is written as (see section \ref{alpha}):
+In this experiment ${}^{147}$Samarium that makes up 15\% of the natural Samarium is used as $\alpha$-radiator. The used sample consists of $Sm_2O_3$ and has a purity of 99\%. Samarium has a half-life of  $T_{\frac12}({}^{147}Sm)=1.06\cdot10^{11}$a. It decays into ${}^{143}$Neodym (stable) transmitting an $\alpha$-particle with an energy of about 2MeV which is written as (see section \ref{alpha}):
 
 \[{}^{147}_{62} \rightarrow {}^{143}_{60}Nd + {}^4_2He\]
 
 \subsubsection{$\beta$-radiator}
 As $\beta$-radiator we use ${}^{40}$Kalium with a relative  mass portion of 0.0118\%. The sample used in the Experiment is KCl. 
-${}^{40}$Kalium can decay via two decays: Either via $\beta^-$-Zerfall (see section \ref{beta}) to ${}^{40}$Calcium or via electron capture to ${}^{40}$Argon:
+${}^{40}$Kalium can decay via two decays: Either via $\beta^-$-decay (see section \ref{beta}) to ${}^{40}$Calcium or via electron capture (see section \ref{ec}) to ${}^{40}$Argon:
 
 \[{}^{40}_{19}K \rightarrow {}^{40}_{20}Ca + e^- + \bar{\nu_e}\]
 \[{}^{40}_{19}K + e^- \rightarrow {}^{40}_{18}Ar + \bar{\nu_e}\]
@@ -384,16 +384,16 @@ The ratio for the two decays is $\frac{EC}{\beta-}=0.12$.\\
 
 In the following the different measurements that were necessary to determine the half-lives are described.
 
-\subsubsection{Counter Tube with ${}^{238}$Uran}\label{durchfuehrunguran}
+\subsubsection{Counter Tube Characteristics with ${}^{238}$Uranium}\label{durchfuehrunguran}
 \begin{itemize}
-	\item First of all the variable settings of the electronic have to be chosen in a way so that a useful signal is generated. In order to achieve such a signal, the signal is observed with an oscilloscope after passing through the preamplifier, the main amplifier and the single channel analyzer (SCA) separately. To optimise the seperation of our signal and noise the lower level of the SCA has to be high enough to eliminate pules caused by noise and at the same time low enough to still register small signal pulses. The chosen settings need to be kept constant during the entire experiment. We chose the following settings:
+	\item First of all the variable settings of the electronic have to be chosen in a way so that a useful signal is generated. In order to achieve such a signal, the signal is observed with an oscilloscope after passing through the preamplifier, the main amplifier and the single channel analyzer (SCA) separately. To optimize the separation of our signal and noise the lower level of the SCA has to be high enough to eliminate pules caused by noise and at the same time low enough to still register small signal pulses. The chosen settings need to be kept constant during the entire experiment.
 	
 		\textbf{shaping amplifier}: coarse gain: 100 \hspace{1.5cm} gain: 1.1 \hspace{1cm} shaping time: 6$\mu$s\\
 		\textbf{timing SCA}: \hspace{1.13cm} lower level: 3.6 \hspace{0.95cm} window: 0.06 \hspace{2.2cm} delay: 4.09
 	
-	\item The characteristic of the counter tube is recorded with ${}^{238}$Uran (see chapter \ref{uranium}). The settings chosen for the mesurement program are the following: initial voltage $U_{anf}$=1000V, final voltage $U_{end}$=4000V, voltage intervalls $U_{step}$=100V and counting time per measurement/voltage t=50s
+	\item The characteristic of the counter tube is recorded with ${}^{238}$Uran (see chapter \ref{uranium}). The settings chosen for the measurement program are the following: initial voltage $U_{anf}$=1000V, final voltage $U_{end}$=4000V, voltage intervals $U_{step}$=100V and counting time per measurement/voltage t=50s
 	
-	\item We then measure the background by measuring with an empty Aluminium dish with the same settings as before except the couting time per voltage being t=100s
+	\item We then measure the background by measuring with an empty Aluminium dish with the same settings as before except the counting time per voltage being t=100s
 \end{itemize}
 
 
@@ -402,7 +402,7 @@ In the following the different measurements that were necessary to determine the
 
 \begin{itemize}
 	
-	\item We now measure the $\alpha$-Plateau of ${}^{147}$Sm with an initial voltage of $U_{anf}$=1900V and a final voltage of $U_{end}$=3400V (a bit larger than the begnning of the $\beta$-Plateau), voltage intervals $U_{step}$=100V and counting time per measurement/voltage t=200s. With this measurement we want to determine an ideal working point to measure the activity of ${}^{147}$Sm.
+	\item We now measure the $\alpha$-Plateau of ${}^{147}$Sm with an initial voltage of $U_{anf}$=1900V and a final voltage of $U_{end}$=3400V (a bit larger than the beginning of the $\beta$-Plateau), voltage intervals $U_{step}$=100V and counting time per measurement/voltage t=200s. With this measurement we want to determine an ideal working point to measure the activity of ${}^{147}$Sm.
 	
 	\item At a working point of 2500V we measure the activity of ${}^{147}$Sm.
       As we want to obtain a statistical error no larger than 2\% we calculate the measuring time needed from the expected value for the counting rate n (obtained from the Plateau measurement):$n_{2500}$=0.48$s^{-1}$=5400s (see \ref{SaCa}) 
@@ -467,16 +467,16 @@ We also measured the counter tube characteristics of Kalium to determine the wor
 
 In figure \ref{ckalium} we see that the counting rate seems to be constant between $U=3300\,\mathrm{V}$ and $U=4000\,\mathrm{V}$ with one outlier at $U=3800\,\mathrm{V}$. The correction does not essentially change this behavior, so we choose our working point at $U=3500\,\mathrm{V}$.
 \newpage
-\subsection{Half-life of Samarium \label{HS}}
+\subsection{Half-life of Samarium}\label{auswertungSamarium}\label{HS}
 With formula (\ref{halflifeSm}) we can now calculate the half-life of Samarium out of the measured counting rate (see chapter \ref{alphacorrection}). We use the following constants
 \begin{align*}
-	N_{\text{A}}&=6.022\cdot10^{23}\\
+	N_{\text{A}}&=6.022\cdot10^{23}\,\mathrm{mol^{-1}}\,^{\cite{dem}}\\
 	h_{\text{rel}}&=0.1487\,^{\cite{anleitung}}\\
-	R\rho&=0.04025\\
-	m_{\text{mol}}&=0.34872
+	R\rho&=0.04025\,\mathrm{\frac{kg}{m^2}}\\
+	m_{\text{mol}}&=0.34872\,\mathrm{\frac{kg}{mol}}\,^{\cite{chemie1}}
 \end{align*}
-(where $R\rho$ is calculated with the known values for air)
-and the following measurement data:
+where $R\rho$ is calculated with the known values for air\textsuperscript{\cite{anleitung}}: $$R\rho=R_{\text{Air}}\rho_{\text{Air}}\cdot\frac{\sqrt{m_A}}{\sqrt{m_{A,\text{Air}}}}=R_{\text{Air}}\rho_{\text{Air}}\cdot\frac{\sum{p_i}\cdot\sqrt{m_A}}{\sum{p_{i,\text{Air}}}\cdot\sqrt{m_{A,\text{Air}}}}$$
+We use the following measurement data:
 \begin{align*}
 	d&=(2.877\pm0.002)\cdot10^{-2}\mathrm{m}\\
 	n&=(0.416\pm0.009)\,\mathrm{s^{-1}}
@@ -500,7 +500,7 @@ So our result for the half-life of Samarium is:
 	T_{\frac12,\text{Sm}}&=\left(1.93\pm0.04\right)\cdot10^{11}\text{ years}
 \end{align*}
 \newpage
-\subsection{Half-life of Kalium}
+\subsection{Half-life of Kalium}\label{auswertungKalium}
 As described in chapter \ref{kaliumdurchfuehrung} we measured the counting rate of Kalium for different masses. The counting rate relates to the mass as following (see chapter \ref{betacorrection}): 
 \begin{align}
 	n=a(1-e^{-bm})\label{fitfunction}
@@ -525,10 +525,10 @@ with the following covariance matrix
 
 We have the following constants:
 \begin{align*}
-	N_{\text{A}}&=6.022\cdot10^{23}\\
+	N_{\text{A}}&=6.022\cdot10^{23}\,\mathrm{mol^{-1}}\,^{\cite{dem}}\\
 	h_{\text{rel}}&=0.000118\,^{\cite{anleitung}}\\
-	f_B&=1.29\\
-	m_{\text{mol}}&=0.07455
+	f_B&=1.29\,^{\cite{anleitung}}\\
+	m_{\text{mol}}&=0.07455\,\mathrm{\frac{kg}{mol}}\,^{\cite{chemie2}}
 \end{align*}
 
 So we can calculate the half-life with formula (\ref{halftimeKa}) (see chapter \ref{betacorrection}):
@@ -668,7 +668,12 @@ Edward Creutz,
 Springer Science \& Business Media, 2012
 %\bibitem{molmasse}
 %  \emph{http://www.convertunits.com/molarmass/<ELEMENTNAME AUF ENGLISCH>}, Stand 28.09.2015
-  
+
+\bibitem{chemie1}
+\emph{http://de.webqc.org/molecular-weight-of-sm2O3.html}, 12.10.2016
+
+\bibitem{chemie2}
+\emph{http://de.webqc.org/mmcalc.php}, 12.10.2016
 
 \end{thebibliography}
 
