@@ -240,7 +240,7 @@ As $\alpha$-particles have a very limited range in matter, the effect of self-ab
 \vskip0.5cm
 \begin{minipage}{\textwidth}
 	\centering
-	\includegraphics[width=.3\textwidth]{figures/alpha-Korrektur.png}
+	\includegraphics[width=.25\textwidth]{figures/alpha-Korrektur.png}
 	\captionof{figure}{For a maximum range R of $\alpha$-particles in the sample there exists a maximum angle $\theta_{max}$ at which particles can still leave the sample.}
 \end{minipage}
 \vskip0.5cm
@@ -402,7 +402,8 @@ As discussed in chapter \ref{betacorrection} the measured counting rate of Kaliu
 \subsubsection{Uranium}
 As discussed in chapter \ref{uranium} we use $^{238}$Uranium to get the characteristics of the counter tube.
 \gra{zaehlrohr-uran}{Counter tube characteristics of $^{238}$U\label{curan}}
-In figure \ref{curan} we see two plateaus. The first plateau comes from the $\alpha$-decay of $^{238}$U and the second plateau shows the $\beta$-decay of $^{234}$Th and $^{234}$Pd. 
+In figure \ref{curan} we see two plateaus. The first plateau comes from the $\alpha$-decay of $^{238}$U and the second plateau shows the $\beta$-decay of $^{234}$Th and $^{234}$Pd. The plateaus are between $U=1900\,\mathrm{V}$ and $U=2600\,\mathrm{V}$ for $\alpha$ and between $U=3200\,\mathrm{V}$ and $U=4000\,\mathrm{V}$ for $\beta$.
+The error on the counting rate is here and in the following chapters given by the Poisson error on the counts: $$s_n=n\frac{s_N}{N}=\frac Nt\frac1{\sqrt N}=\frac{\sqrt{N}}{t}=\sqrt{\frac nt}$$
 
 \subsubsection{Background}\label{untergrund}
 We measured the background radiation by putting an empty aluminium dish inside the counter tube.
@@ -437,6 +438,7 @@ and the following measurement data:
 	d&=(2.877\pm0.002)\cdot10^{-2}\mathrm{m}\\
 	n&=(0.416\pm0.009)\,\mathrm{s^{-1}}
 \end{align*}
+The error on $d$ is given by gaussian error propagation out of the error for the single measurements $d_i$: $s_d=\frac1{\sqrt{n}}s_{d_i}$.\\
 We get the following result: 
 \begin{align*}
 	T_{\frac12,\text{Sm}}&=\ln2\cdot\frac{N_{\text{A}}h_{\text{rel}}R\rho\pi d^2}{m_{\text{mol}}8n}\\&=1.93\cdot 10^{11}\text{ years}
@@ -576,7 +578,7 @@ Additionally another reason for the large error on the half-life of Kalium is th
 %\includegraphics[width=0.9\textwidth]{figures/IMG_20151002_141014.jpg}
 %\end{minipage}
 
-\subsection{Measurement protocol}\label{laborbuch}
+\subsection{Lab Book}\label{laborbuch}
 \begin{minipage}{\textwidth}
 	\centering
 	\includegraphics[width=0.9\textwidth]{figures/Laborbuch-1.pdf}
