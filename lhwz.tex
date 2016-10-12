@@ -349,7 +349,7 @@ The pulses detected by the counter tube are proportional to the primary ionizati
 \vskip 20 pt
 \gra[0.8]{Versuchsaufbau}{Experimental Set-Up \textsuperscript{\cite{staat}}}
 \subsection{Used samples}
-
+ In the following the different samples and their characteristic decays used in this experiment are explained.
 \subsubsection{Characteristic of the Counter tube}\label{uranium}
 To record the characteristic of the Counter Tube (see chapter \ref{durchfuehrunguran}) ${}^{238}$Uranium is used. It makes up 99.275\% of the natural Uranium.
 With a half-life of $T_{\frac12}({}^{238}U)=4.468\cdot 10^9$a it transforms via  $\alpha$-decay to ${}^{234}$Thorium. The energy of the $\alpha$-particle is about 4MeV in this process. According to \ref{alpha} this process is described as:
@@ -430,7 +430,7 @@ In the following the different measurements that were necessary to determine the
 \newpage
 \section{Analysis}
 
-In the following sections we will analyze the data we recorded in our measurements to determine the working point and to determine the half-lives of the samples.
+In the following sections we will analyze the data we recorded in our measurements to determine the working point and to determine the half-lives of the samples. The Analysis is done with the programming language R, the code can be found in the attachement (see \ref{Sourcecode}).
 
 \subsection{Counter Tube Characteristics}
 
@@ -438,34 +438,34 @@ In the following sections we will analyze the data we recorded in our measuremen
 As discussed in chapter \ref{durchfuehrunguran} we use $^{238}$Uranium to get the characteristics of the counter tube.
 
 \gra{zaehlrohr-uran}{Counter tube characteristics of $^{238}$U\label{curan}}
-In figure \ref{curan} we see two plateaus. The first plateau comes from the $\alpha$-decay of $^{238}$U and the second plateau shows the $\beta$-decay of $^{234}$Th and $^{234}$Pd (see section \ref{uranium}). The plateaus are between $U=1900\,\mathrm{V}$ and $U=2600\,\mathrm{V}$ for $\alpha$ and between $U=3200\,\mathrm{V}$ and $U=4000\,\mathrm{V}$ for $\beta$.
-The error on the counting rate is here and in the following chapters given by the Poisson error on the counts: 
+In figure \ref{curan}, that is obtained by plotting the data from \ref{LM}, we see the expected behaviour, namely two plateuas for the different decays. The first plateau comes from the $\alpha$-decay of $^{238}$U and the second plateau shows the $\beta$-decay of $^{234}$Th and $^{234}$Pd (see section \ref{uranium}). As it can be seen in figure \ref{curan} the plateaus are between $U=1900\,\mathrm{V}$ and $U=2600\,\mathrm{V}$ for $\alpha$ and between $U=3200\,\mathrm{V}$ and $U=4000\,\mathrm{V}$ for $\beta$.
+The error on the counting rate is here and in the following chapters given by the Poisson error on the counts that is calculated in the following manner: 
 \begin{align}
 s_n=n\frac{s_N}{N}=\frac Nt\frac1{\sqrt N}=\frac{\sqrt{N}}{t}=\sqrt{\frac nt} \label{Poisson} 
 \end{align}
 
 \newpage
 \subsubsection{Background}\label{untergrund}
-We measured the background radiation by putting an empty aluminium dish inside the counter tube (see chapter \ref{durchfuehrunguran}).
+The background radiation is measured by putting an empty aluminium dish inside the counter tube (see chapter \ref{durchfuehrunguran}).
 
 \gra{zaehlrohr-untergrund}{Counter tube characteristics of the background radiation\label{background}}
-In figure \ref{background} we see that the background is very small. The background counting rates are about 3 orders of magnitude smaller than the counting rates of the uranium sample. So we would not be able to see any change in the position of the plateaus if we substracted the background from the counter tube characteristics of the uranium sample.\\
+In figure \ref{background}, that is obtained from \ref{geh halt}, we see that the background is very small. The background counting rates are about 3 orders of magnitude smaller than the counting rates of the uranium sample. So we would not be able to see any change in the position of the plateaus if we substracted the background from the counter tube characteristics of the uranium sample.\\
 
-Additionally the time for measuring the background is very short, so we don't get significant background counting rates. We see in figure \ref{background} that the counting rates scatter a lot and won't better our values.
+Additionally the time for measuring the background is very short, so we don't get significant background counting rates. As a consequence, we see in figure \ref{background} that the counting rates scatter a lot and probably won't better our values.
 \newpage
 \subsubsection{Samarium}
-Now we tried to get the working point for the Samarium measurements (see chapter \ref{durchfuehrungsamarium}). Therefore we measured the counter tube characteristics of Samarium in a span starting at the beginning of the $\alpha$-plateau of uranium and ending on the beginning of the $\beta$-plateau of uranium.
+As a next step the working point is determined (see chapter \ref{durchfuehrungsamarium}). Therefore we measure the counter tube characteristics of Samarium in a span starting at the beginning of the $\alpha$-plateau of uranium and ending on the beginning of the $\beta$-plateau of uranium.
 
 \gra{zaehlrohr-samarium}{Counter tube characteristics of $^{147}$Sm \textcolor{blue}{(corrected with the background)}\label{csamarium}}
 
-In figure \ref{csamarium} we plotted the counter tube characteristics of $^{147}$Sm once original and once corrected by the background seen in figure \ref{background}. Since the corrected data scatters a lot and has very big error bars (as discussed in chapter \ref{untergrund}) we can't really use the corrected data to set our working point. So we assumed an almost linear behavior in the range of $U=2300\,\mathrm{V}$ and $U=2900\,\mathrm{V}$. Considering the $\alpha$-plateau from figure \ref{curan} we set the working point for Samarium to $U=2500\,\mathrm{V}$
+In figure \ref{csamarium} we plotted the counter tube characteristics of $^{147}$Sm using the data presented in \ref{SaCa}, once original and once corrected by the background seen in figure \ref{background}. Since the corrected data scatters a lot and has very big error bars (as discussed in chapter \ref{untergrund}) we can't really use the corrected data to set our working point. So we assumed an almost linear behavior in the range of $U=2300\,\mathrm{V}$ and $U=2900\,\mathrm{V}$. Considering the $\alpha$-plateau from figure \ref{curan} we set the working point for Samarium to $U=2500\,\mathrm{V}$
 \newpage
 \subsubsection{Kalium}
 We also measured the counter tube characteristics of Kalium to determine the working point for the Kalium measurements (see chapter \ref{kaliumdurchfuehrung}). We started at the beginning of the $\beta$-plateau and stopped at $U=4000\,\mathrm{V}$.
 
 \gra{zaehlrohr-kalium}{Counter tube characteristics of $^{40}$K \textcolor{blue}{(corrected with the background)}\label{ckalium}}
 
-In figure \ref{ckalium} we see that the counting rate seems to be constant between $U=3300\,\mathrm{V}$ and $U=4000\,\mathrm{V}$ with one outlier at $U=3800\,\mathrm{V}$. The correction does not essentially change this behavior, so we choose our working point at $U=3500\,\mathrm{V}$.
+In figure \ref{ckalium} that is obtained with the data in \ref{KaCa}we see that the counting rate seems to be constant between $U=3300\,\mathrm{V}$ and $U=4000\,\mathrm{V}$ with one outlier at $U=3800\,\mathrm{V}$. The correction does not essentially change this behavior, so we choose our working point at $U=3500\,\mathrm{V}$.
 \newpage
 \subsection{Half-life of Samarium}\label{auswertungSamarium}\label{HS}
 With formula (\ref{halflifeSm}) we can now calculate the half-life of Samarium out of the measured counting rate (see chapter \ref{alphacorrection}). We use the following constants
@@ -490,7 +490,7 @@ We get the following result (see chapter \ref{alphacorrection}):
 \begin{align*}
 	T_{\frac12,\text{Sm}}&=\ln2\cdot\frac{N_{\text{A}}h_{\text{rel}}R\rho\pi d^2}{m_{\text{mol}}8n}\\&=1.93\cdot 10^{11}\text{ years}
 \end{align*}
-The error on $T_{\frac12,\text{Sm}}$ we get with the gaussian error propagation on the Poisson errors of the counting rate: 
+The error on $T_{\frac12,\text{Sm}}$ is obtained with the gaussian error propagation on the Poisson errors of the counting rate: 
 \begin{align*}
 	s_{T_{\frac12,\text{Sm}}}&=T_{\frac12,\text{Sm}}\cdot\sqrt{\left(2\frac{s_d}{d}\right)^2+\left(\frac{s_n}{n}\right)^2}\\&=0.04\cdot 10^{11}\text{ years}
 \end{align*}
@@ -505,15 +505,16 @@ As described in chapter \ref{kaliumdurchfuehrung} we measured the counting rate 
 \begin{align}
 	n=a(1-e^{-bm})\label{fitfunction}
 \end{align}
+We hence plot the obtained data, (see \ref{bb})the counting rate over the mass, as presented in figure \ref{kalium}.
 
 \gra{kalium}{Counting rate in dependence of the mass with an exponential fit\label{kalium}}
 
-Fitting formula (\ref{fitfunction}) to the data (see figure \ref{kalium}) gives us the following parameters:
+Fitting the expected curve (see \ref{kalium.R} for Sourcecode) as given in formula (\ref{fitfunction}) to the data (see figure \ref{kalium}) then gives us the following parameters:
 \begin{align*}
 	a&=4.4\,\mathrm{s^{-1}}\\
 	b&=2119\,\mathrm{kg^{-1}}
 \end{align*}
-with the following covariance matrix
+with the following covariance matrix that is used to calculate the error on the half-life:
 \begin{align*}
 \sigma&=\left(
 	\begin{matrix}
@@ -541,6 +542,7 @@ The error on $T_{\frac12,\text{Ka}}$ is again obtained with the gaussian error p
 	s_{T_{\frac12,\text{Ka}}}&=\sqrt{\sum_{i,j=\{a,b\}}\left(\del[T_{\frac12,\text{Ka}}]{i}\right)\left(\del[T_{\frac12,\text{Ka}}]{j}\right)\sigma_{ij}}\\
 	&=0.8\cdot10^9\,\text{years}
 \end{align*}
+where $\sigma_{ij}$ are the components of the covariance matrix.\\
 So our result for the half-life of Kalium is:
 \begin{align*}
 T_{\frac12,\text{Ka}}&=\left(1.3\pm0.8\right)\cdot10^{9}\text{ years}
@@ -575,7 +577,7 @@ Additionally another reason for the large error on the half-life of Kalium is th
 
 
 
-\subsection{Sourcecode}
+\subsection{Sourcecode \label{Sourcecode}}
 
 \subsubsection{\code{auswertung.R}}\label{auswertung.R}
 \lstinputlisting[language=R]{r-files/auswertung.R}
@@ -586,10 +588,10 @@ Additionally another reason for the large error on the half-life of Kalium is th
 \subsubsection{\code{round.R}}\label{round.R}
 \lstinputlisting[language=R]{r-files/round.R}
 
-\subsection{Experimental data}
-\subsubsection{Uranium Characteristics}
+\subsection{Experimental data \label{bb}}
+\subsubsection{Uranium Characteristics \label{LM}}
 \lstinputlisting{data/uran2.txt}
-\subsubsection{Background Characteristics}
+\subsubsection{Background Characteristics \label{geh halt}}
 \lstinputlisting{data/Kalium1.txt}
 \subsubsection{Samarium Characteristics \label{SaCa}}
 \lstinputlisting{data/Samarium1.txt}
