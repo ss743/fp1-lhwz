@@ -1,3 +1,5 @@
+library(plotrix)
+
 oldw <- getOption("warn")
 options(warn = -1)
 
