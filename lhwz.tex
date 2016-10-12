@@ -371,7 +371,7 @@ In this experiment ${}^{147}$Samarium that makes up 15\% of the natural Samarium
 
 \subsubsection{$\beta$-radiator}
 As $\beta$-radiator we use ${}^{40}$Kalium with a relative  mass portion of 0.0118\%. The sample used in the Experiment is KCl. 
-${}^{40}$Kalium can decay via two decays: Either via $\beta^-$-Zerfall to ${}^{40}$Calcium or via electron capture to ${}^{40}$Argon:
+${}^{40}$Kalium can decay via two decays: Either via $\beta^-$-Zerfall (see section \ref{beta}) to ${}^{40}$Calcium or via electron capture to ${}^{40}$Argon:
 
 \[{}^{40}_{19}K \rightarrow {}^{40}_{20}Ca + e^- + \bar{\nu_e}\]
 \[{}^{40}_{19}K + e^- \rightarrow {}^{40}_{18}Ar + \bar{\nu_e}\]
@@ -380,9 +380,11 @@ The ratio for the two decays is $\frac{EC}{\beta-}=0.12$.\\
 
 \subsection{Experimental Procedure}
 
+In the following the different measurements that were necessary to determine the half-lives are described.
+
 \subsubsection{Counter Tube with ${}^{238}$Uran}\label{durchfuehrunguran}
 \begin{itemize}
-	\item First of all the variable settings of the electronic have to be chosen in a way so that a useful signal is generated. In order to achieve such a signal, the signal is observed with an oscilloscope after passing through the preamplifier, the main amplifier and the single channel analyzer (SCA) separately. To optimise the seperation of our signal and noise the lower level of the SCA has to be high enough to eliminate pules caused by noise and at the same time low enough to still register small signal pulses. The chosen settings need to be kept constant during the entire experiment.
+	\item First of all the variable settings of the electronic have to be chosen in a way so that a useful signal is generated. In order to achieve such a signal, the signal is observed with an oscilloscope after passing through the preamplifier, the main amplifier and the single channel analyzer (SCA) separately. To optimise the seperation of our signal and noise the lower level of the SCA has to be high enough to eliminate pules caused by noise and at the same time low enough to still register small signal pulses. The chosen settings need to be kept constant during the entire experiment. We chose the following settings:
 	
 		\textbf{shaping amplifier}: coarse gain: 100 \hspace{1.5cm} gain: 1.1 \hspace{1cm} shaping time: 6$\mu$s\\
 		\textbf{timing SCA}: \hspace{1.13cm} lower level: 3.6 \hspace{0.95cm} window: 0.06 \hspace{2.2cm} delay: 4.09
@@ -401,7 +403,7 @@ The ratio for the two decays is $\frac{EC}{\beta-}=0.12$.\\
 	\item We now measure the $\alpha$-Plateau of ${}^{147}$Sm with an initial voltage of $U_{anf}$=1900V and a final voltage of $U_{end}$=3400V (a bit larger than the begnning of the $\beta$-Plateau), voltage intervals $U_{step}$=100V and counting time per measurement/voltage t=200s. With this measurement we want to determine an ideal working point to measure the activity of ${}^{147}$Sm.
 	
 	\item At a working point of 2500V we measure the activity of ${}^{147}$Sm.
-      As we want to obtain a statistical error no larger than 2\% we calculate the measuring time needed from the expected value for the counting rate n (obtained from the Plateau measurement):$n_{2500}$=0.48$s^{-1}$=5400s
+      As we want to obtain a statistical error no larger than 2\% we calculate the measuring time needed from the expected value for the counting rate n (obtained from the Plateau measurement):$n_{2500}$=0.48$s^{-1}$=5400s (see \ref{SaCa}) 
       
     \item The background is measured in a combined measurement for both backgrounds (Kalium and Samarium) over night.
     
@@ -415,7 +417,7 @@ The ratio for the two decays is $\frac{EC}{\beta-}=0.12$.\\
 \begin{itemize}
 	\item The $\beta$-Plateau is measured with ${}^{40}$K with an inital voltage of $U_{anf}$=3200V to the final voltage $U_{end}$=4000V in 100V-steps and a counting time of t=100s. Here the working point shall be determined again.
 	
-	\item At a working point of U=3500V  the activity is measured for different masses. The measuring time is determined as before, by aiming at having a statistical error no larger than 2\%. As the uncertainty for higher activities will be higher due to the Poisson error, we measure more points for higher masses. We then planned to also cover values until 0 gram, but didn't manage to do so as we ran out of time. The mass is measures with a precision scale.
+	\item At a working point of U=3500V  the activity is measured for different masses. The measuring time is determined as before, by aiming at having a statistical error no larger than 2\%, we obtain t=600s (see \ref{KaCa}). As the uncertainty for higher activities will be higher due to the Poisson error, we measure more points for higher masses. We then planned to also cover values until 0 gram, but didn't manage to do so as we ran out of time. The mass is measures with a precision scale.
 	
 	\item As mentioned before the underground is measured over night.
 	
@@ -426,14 +428,20 @@ The ratio for the two decays is $\frac{EC}{\beta-}=0.12$.\\
 \newpage
 \section{Analysis}
 
+In the following sections we will analyze the data we recorded in our measurements to determine the working point and to determine the half-lives of the samples.
+
 \subsection{Counter Tube Characteristics}
 
 \subsubsection{Uranium}
 As discussed in chapter \ref{durchfuehrunguran} we use $^{238}$Uranium to get the characteristics of the counter tube.
 
 \gra{zaehlrohr-uran}{Counter tube characteristics of $^{238}$U\label{curan}}
-In figure \ref{curan} we see two plateaus. The first plateau comes from the $\alpha$-decay of $^{238}$U and the second plateau shows the $\beta$-decay of $^{234}$Th and $^{234}$Pd. The plateaus are between $U=1900\,\mathrm{V}$ and $U=2600\,\mathrm{V}$ for $\alpha$ and between $U=3200\,\mathrm{V}$ and $U=4000\,\mathrm{V}$ for $\beta$.
-The error on the counting rate is here and in the following chapters given by the Poisson error on the counts: $$s_n=n\frac{s_N}{N}=\frac Nt\frac1{\sqrt N}=\frac{\sqrt{N}}{t}=\sqrt{\frac nt}$$
+In figure \ref{curan} we see two plateaus. The first plateau comes from the $\alpha$-decay of $^{238}$U and the second plateau shows the $\beta$-decay of $^{234}$Th and $^{234}$Pd (see section \ref{uranium}). The plateaus are between $U=1900\,\mathrm{V}$ and $U=2600\,\mathrm{V}$ for $\alpha$ and between $U=3200\,\mathrm{V}$ and $U=4000\,\mathrm{V}$ for $\beta$.
+The error on the counting rate is here and in the following chapters given by the Poisson error on the counts: 
+\begin{align}
+s_n=n\frac{s_N}{N}=\frac Nt\frac1{\sqrt N}=\frac{\sqrt{N}}{t}=\sqrt{\frac nt} \label{Poisson} 
+\end{align}
+
 \newpage
 \subsubsection{Background}\label{untergrund}
 We measured the background radiation by putting an empty aluminium dish inside the counter tube (see chapter \ref{durchfuehrunguran}).
@@ -457,7 +465,7 @@ We also measured the counter tube characteristics of Kalium to determine the wor
 
 In figure \ref{ckalium} we see that the counting rate seems to be constant between $U=3300\,\mathrm{V}$ and $U=4000\,\mathrm{V}$ with one outlier at $U=3800\,\mathrm{V}$. The correction does not essentially change this behavior, so we choose our working point at $U=3500\,\mathrm{V}$.
 \newpage
-\subsection{Half-life of Samarium}
+\subsection{Half-life of Samarium \label{HS}}
 With formula (\ref{halflifeSm}) we can now calculate the half-life of Samarium out of the measured counting rate (see chapter \ref{alphacorrection}). We use the following constants
 \begin{align*}
 	N_{\text{A}}&=6.022\cdot10^{23}\\
@@ -471,7 +479,11 @@ and the following measurement data:
 	d&=(2.877\pm0.002)\cdot10^{-2}\mathrm{m}\\
 	n&=(0.416\pm0.009)\,\mathrm{s^{-1}}
 \end{align*}
-The error on $d$ is given by gaussian error propagation out of the error for the single measurements $d_i$: $s_d=\frac1{\sqrt{n}}s_{d_i}$.\\
+where the error on n is calculated according to \ref{Poisson} and the error on $d$ is given by gaussian error propagation out of the error for the single measurements $d_i$: 
+\begin{align*}
+ s_d=\frac1{\sqrt{n}}s_{d_i}
+\end{align*}
+
 We get the following result (see chapter \ref{alphacorrection}): 
 \begin{align*}
 	T_{\frac12,\text{Sm}}&=\ln2\cdot\frac{N_{\text{A}}h_{\text{rel}}R\rho\pi d^2}{m_{\text{mol}}8n}\\&=1.93\cdot 10^{11}\text{ years}
@@ -522,7 +534,7 @@ So we can calculate the half-life with formula (\ref{halftimeKa}) (see chapter \
 	T_{\frac12,\text{Ka}}&=\frac{\ln2N_Ah_{rel}f_B}{2\cdot1.12abm_{mol}}\\
 	&=1.3\cdot10^{9}\,\text{years}
 \end{align*}
-The error on $T_{\frac12,\text{Ka}}$ we get once again with the gaussian error propagation: 
+The error on $T_{\frac12,\text{Ka}}$ is again obtained with the gaussian error propagation: 
 \begin{align*}
 	s_{T_{\frac12,\text{Ka}}}&=\sqrt{\sum_{i,j=\{a,b\}}\left(\del[T_{\frac12,\text{Ka}}]{i}\right)\left(\del[T_{\frac12,\text{Ka}}]{j}\right)\sigma_{ij}}\\
 	&=0.8\cdot10^9\,\text{years}
@@ -572,14 +584,14 @@ Additionally another reason for the large error on the half-life of Kalium is th
 \subsubsection{\code{round.R}}\label{round.R}
 \lstinputlisting[language=R]{r-files/round.R}
 
-\subsection{Rohdaten}
+\subsection{Experimental data}
 \subsubsection{Uranium Characteristics}
 \lstinputlisting{data/uran2.txt}
 \subsubsection{Background Characteristics}
 \lstinputlisting{data/Kalium1.txt}
-\subsubsection{Samarium Characteristics}
+\subsubsection{Samarium Characteristics \label{SaCa}}
 \lstinputlisting{data/Samarium1.txt}
-\subsubsection{Kalium Characteristics}
+\subsubsection{Kalium Characteristics \label{KaCa}}
 \lstinputlisting{data/Kalium1.txt}
 \subsubsection{Samarium Measurement}
 \lstinputlisting{data/Samarium2.txt}
